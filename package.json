@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "scripts": {
     "start": "ng serve",
+    "lint": "ng lint",
     "build": "ng build",
     "build:prod": "ng build --prod --base-href https://jkl03.github.io/jkl03/",
     "deploy": "npm run deploy:ghp && npm run deploy:fb",
@@ -41,7 +42,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "angular-cli-ghpages": "^0.6.2",
-    "codelyzer": "^5.1.2",
+    "codelyzer": "^5.2.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",

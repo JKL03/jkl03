@@ -38,3 +38,7 @@ jobs:
 
       - name: Build
         run:  npm build:prod
+
+      - name: Deploy
+        run: ngh
+
