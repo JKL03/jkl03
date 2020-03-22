@@ -1,4 +1,4 @@
-name: Build
+name: Deploy
 on:
   push:
     branches: [ gh-pages ]
@@ -9,7 +9,7 @@ on:
       - '**.md'
 jobs:
   build:
-    name: Build
+    name: Deploy
 
     runs-on: ubuntu-latest
 
