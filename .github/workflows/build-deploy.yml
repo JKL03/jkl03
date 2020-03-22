@@ -37,7 +37,7 @@ jobs:
         run: npm run lint
 
       - name: Build
-        run:  npm build:prod
+        run:  npm run build:prod
 
       - name: Deploy
         run: ngh
