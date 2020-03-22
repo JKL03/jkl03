@@ -1,12 +1,13 @@
 {
   "name": "jkl03",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
     "deploy": "npm run deploy:ghp && npm run deploy:fb",
     "deploy:ghp": "ng build --prod --base-href https://jkl03.github.io/jkl03/ && npx angular-cli-ghpages",
-    "deploy:fb": "ng build --prod && npx firebase-tools deploy"
+    "deploy:fb": "ng build --prod && npx firebase-tools deploy",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +39,7 @@
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^0.6.2",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -47,9 +49,14 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
+    "semantic-release": "^17.0.4",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "tslint-angular": "^3.0.2",
     "typescript": "~3.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JKL03/jkl03.git"
   }
 }
