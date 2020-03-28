@@ -1,23 +1,45 @@
+@import "../../../styles/vairables/colors";
+
 :host {
-  opacity: 0.8;
   margin-top: 5rem;
 }
 
-a {
-  font-size: 2rem;
-}
-
-#githubLink {
-  color: #848484;
-  margin-right: 1rem;;
-  float: right;
-}
-
-#githubLink:hover {
-  color: #691C7C;
-}
-
 nav {
-  height: 38px;
-  background: white;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  background: $page-blue;
+  transition: padding-top .3s, padding-bottom .3s;
+  position: sticky;
+  top: 0px;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  flex-wrap: nowrap;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: unset;
+  padding: unset;
+  min-width: 300px;
+}
+
+a {
+  color: white;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  nav {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
+}
+

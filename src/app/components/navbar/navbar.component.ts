@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { navbarText } from './navbar.text';
 
 @Component({
   selector: 'app-navbar',
@@ -6,4 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+
+  public text = navbarText;
+
+  scroll(target: string) {
+    document.getElementById(target).scrollIntoView();
+  }
 }
