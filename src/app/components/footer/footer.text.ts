@@ -14,7 +14,7 @@ export const footerText = {
         {
             name: 'Xing',
             class: 'fa-xing',
-            href: 'https://www.linkedin.com/in/jens-kessler-b71658145',
+            href: 'https://www.xing.com/profile/Jens_Kessler16',
         },
         {
             name: 'Github',
