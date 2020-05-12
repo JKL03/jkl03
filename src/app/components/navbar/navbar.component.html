@@ -3,7 +3,7 @@
     <a href="#page-top">Jens Kessler</a>
     <ul class="items">
       <li *ngFor="let tab of text.links">
-        <a [href]="tab.target" [innerHTML]="tab.name" target="_self"></a>
+        <a [innerHTML]="tab.name" target="_self" (click)="scroll(tab.target)"></a>
       </li>
     </ul>
   </div>

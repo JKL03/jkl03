@@ -3,15 +3,15 @@ export const navbarText = {
     links : [
         {
             name: 'Portfolio',
-            target: '#portfolio',
+            target: 'portfolio',
         },
         {
             name: 'About',
-            target: '#about',
+            target: 'about',
         },
         {
             name: 'Contact',
-            target: '#contact',
+            target: 'contact',
         },
     ]
 };

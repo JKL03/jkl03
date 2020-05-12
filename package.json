@@ -6,7 +6,7 @@
     "lint": "ng lint",
     "build": "ng build",
     "build:prod": "ng build --prod --base-href https://jkl03.github.io/jkl03/",
-    "deploy": "npm run deploy:ghp && npm run deploy:fb",
+    "deploy": "ng build --prod --base-href https://jkl03.github.io/jkl03/ && ngh",
     "deploy:ghp": "ng build --prod --base-href https://jkl03.github.io/jkl03/ && npx angular-cli-ghpages",
     "deploy:fb": "ng build --prod && npx firebase-tools deploy",
     "semantic-release": "semantic-release"

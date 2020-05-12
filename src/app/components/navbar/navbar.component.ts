@@ -11,6 +11,7 @@ export class NavbarComponent {
   public text = navbarText;
 
   scroll(target: string) {
-    document.getElementById(target).scrollIntoView();
+    const scrolledY = document.getElementById(target).offsetTop - 30;
+    window.scroll({ top: scrolledY, behavior: 'smooth' });
   }
 }

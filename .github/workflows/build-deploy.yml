@@ -36,9 +36,6 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Build
-        run:  npm run build:prod
-
       - name: Deploy
-        run: ngh
+        run: npm run deploy
 

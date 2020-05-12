@@ -1,3 +1,10 @@
 <div id="portfolio">
     <h2 [innerHTML]="text.title"></h2>
+    <div id="content">
+        <ul class="items">
+            <li *ngFor="let item of text.items">
+                <span [innerHTML]="item"></span>
+            </li>
+        </ul>
+    </div>
 </div>
