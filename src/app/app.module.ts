@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -15,11 +14,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { IntroductionComponent } from './components/introduction/introduction.component';
+import { IntroductionModule } from './components/introduction/introduction.module';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
+        IntroductionComponent,
         PortfolioComponent,
         AboutComponent,
         ContactComponent,
@@ -34,7 +36,8 @@ import { ContactComponent } from './components/contact/contact.component';
         MatCardModule,
         MatTabsModule,
         MatListModule,
-        MatIconModule
+        MatIconModule,
+        IntroductionModule
     ],
     providers: [],
     bootstrap: [AppComponent]

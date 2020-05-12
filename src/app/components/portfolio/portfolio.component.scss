@@ -1,11 +1,31 @@
 @import "../../../styles/vairables/colors";
 
 :host {
-  color: $page-blue;
+  color: $page-white;
 }
-#portfolio{
-  width: 100%;
+
+#portfolio {
   min-height: 500px;
-  padding-top: 5rem;
-  background-color: $page-white;
+  background-color: $page-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#content {
+  margin: 3rem;
+  column-count: 2;
+  column-gap: 3rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  max-width: 800px;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  font-size: 1.2rem;
 }

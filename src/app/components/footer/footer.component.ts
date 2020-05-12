@@ -16,16 +16,6 @@ export class FooterComponent {
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    const innerHeight = window.innerHeight;
-    const scrollPosition = window.pageYOffset;
-
-    console.log('innerHeight: ' + innerHeight);
-    console.log('scrollPosition: ' + scrollPosition);
-    if (scrollPosition > 0) {
-      this.hideToTopButton = true;
-    } else {
-      this.hideToTopButton = false;
-    }
-
+    this.hideToTopButton = window.pageYOffset > 0;
   }
 }

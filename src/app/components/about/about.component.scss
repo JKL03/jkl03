@@ -1,11 +1,24 @@
 @import "../../../styles/vairables/colors";
 
 :host {
-  color: $page-white;
+  color: $page-blue;
 }
-#about{
-  width: 100%;
-  min-height: 500px;
-  padding-top: 5rem;
-  background-color: $page-green;
+
+#about {
+  min-height: 400px;
+  background-color: $page-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#content{
+  margin: 3rem;
+  column-count: 2;
+  column-gap: 3rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+  max-width: 800px;
 }
