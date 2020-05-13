@@ -1,10 +1,15 @@
-name: release
+name: deploy
 on:
   push:
     branches: [ master ]
+    paths-ignore:
+      - '**.md'
 jobs:
   build:
+    name: Build
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -12,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 12.x
 
       - name: Install
         run: npm ci
@@ -20,15 +25,6 @@ jobs:
       - name: Compile
         run: npm run build
 
-      - name: Test
-        run: npm test
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+      - name: Deploy
+        run: npm run deploy --debug
 
-      - name: Lint
-        run: npm run lint
-
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
