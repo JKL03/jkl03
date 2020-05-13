@@ -38,6 +38,3 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-      - name: Deploy
-        run: npm run deploy
-

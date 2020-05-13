@@ -25,5 +25,5 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        run: npm run deploy --debug
+        run: npm run deploy
 
