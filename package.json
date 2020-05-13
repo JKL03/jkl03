@@ -5,9 +5,9 @@
     "start": "ng serve",
     "lint": "ng lint",
     "build": "ng build",
-    "build:prod": "ng build --prod --base-href https://jkl03.github.io/jkl03/",
-    "deploy": "ng build --prod --base-href https://jkl03.github.io/jkl03/ && ngh",
-    "deploy:ghp": "ng build --prod --base-href https://jkl03.github.io/jkl03/ && npx angular-cli-ghpages",
+    "build:prod": "ng build --prod --base-href https://jkl03.github.io/jkl03/ --debug",
+    "deploy": "ng build --prod --base-href https://jkl03.github.io/jkl03/ && ngh --debug",
+    "deploy:ghp": "ng build --prod --base-href https://jkl03.github.io/jkl03/ && npx angular-cli-ghpages --debug",
     "deploy:fb": "ng build --prod && npx firebase-tools deploy",
     "semantic-release": "semantic-release"
   },
