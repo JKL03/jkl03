@@ -6,7 +6,6 @@ on:
       - '**.md'
 jobs:
   build:
-    name: Build
 
     runs-on: ubuntu-latest
 
