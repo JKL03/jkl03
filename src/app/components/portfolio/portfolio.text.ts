@@ -4,7 +4,7 @@ export const portfolioText = {
         'Agile Methodologies (SCRUM)',
         'Project Management',
         'User Experience (UX)',
-        'Leam Management',
+        'Lean Management',
         'Requirement Engineering',
         'Conception and Software Engineering',
         'Web Architectures',
