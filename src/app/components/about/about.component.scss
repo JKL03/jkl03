@@ -6,19 +6,31 @@
 
 #about {
   min-height: 400px;
+  min-width: 320px;
   background-color: $page-white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2rem 0;
 }
 
 #content{
-  margin: 3rem;
-  column-count: 2;
-  column-gap: 3rem;
+  margin: 1rem 2rem;
   font-size: 1.2rem;
   line-height: 2rem;
   text-align: justify;
-  max-width: 800px;
+  max-width: 280px;
+}
+
+@media only screen and (min-device-width: 768px) {
+  #about {
+    padding: 0;
+  }
+  #content {
+    column-count: 2;
+    column-gap: 3rem;
+    margin: 3rem 7rem;
+    max-width: 800px;
+  }
 }

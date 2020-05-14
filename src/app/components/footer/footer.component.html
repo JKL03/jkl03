@@ -4,7 +4,7 @@
         <ul class="items">
             <li *ngFor="let tab of text.links">
                 <a class="btn-social" [href]="tab.href" target=" _blank">
-                    <em class="fab fa-fw {{tab.class}}"></em>
+                    <span class="fab fa-fw {{tab.class}}"></span>
                 </a>
             </li>
         </ul>
@@ -12,6 +12,6 @@
 </div>
 <div *ngIf="hideToTopButton" class="scroll-to-top" style="display: block;">
     <a class="js-scroll-trigger" href="#page-top">
-        <em class="fa fa-chevron-up"></em>
+        <span class="fa fa-chevron-up"></span>
     </a>
 </div>
