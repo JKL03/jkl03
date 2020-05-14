@@ -34,3 +34,9 @@
     max-width: 800px;
   }
 }
+
+@media only screen and (min-device-width: 481px) and (orientation:landscape) {
+  #content {
+    max-width: 440px;
+  }
+}
