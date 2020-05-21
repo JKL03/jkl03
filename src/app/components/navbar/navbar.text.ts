@@ -9,9 +9,5 @@ export const navbarText = {
             name: 'About',
             target: 'about',
         },
-        {
-            name: 'Contact',
-            target: 'contact',
-        },
     ]
 };

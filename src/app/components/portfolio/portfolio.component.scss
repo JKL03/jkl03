@@ -6,20 +6,20 @@
 
 #portfolio {
   min-height: 500px;
+  min-width: 320px;
   background-color: $page-green;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2rem 0;
 }
 
 #content {
-  margin: 3rem;
-  column-count: 2;
-  column-gap: 3rem;
+  margin: 1rem 2rem;
   font-size: 1.2rem;
   line-height: 2rem;
-  max-width: 800px;
+  max-width: 225px;
 }
 
 ul {
@@ -28,4 +28,16 @@ ul {
 
 li {
   font-size: 1.2rem;
+}
+
+@media only screen and (min-device-width: 768px) {
+  #portfolio {
+    padding: 0;
+  }
+  #content {
+    column-count: 2;
+    column-gap: 3rem;
+    margin: 3rem 7rem;
+    max-width: 800px;
+  }
 }

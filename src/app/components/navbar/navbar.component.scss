@@ -2,6 +2,7 @@
 
 :host {
   margin-top: 5rem;
+  display: none;
 }
 
 nav {
@@ -10,15 +11,16 @@ nav {
   background: $page-blue;
   transition: padding-top .3s, padding-bottom .3s;
   position: sticky;
-  top: 0px;
+  top: 0;
 }
 
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 1.6rem;
   flex-wrap: nowrap;
+  margin: 0 3rem;
 }
 
 .items {
@@ -27,7 +29,7 @@ nav {
   list-style: none;
   margin: unset;
   padding: unset;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 a {
@@ -43,3 +45,9 @@ a {
   }
 }
 
+@media only screen and (min-device-width: 768px) {
+  :host {
+    margin-top: 5rem;
+    display: contents;
+  }
+}

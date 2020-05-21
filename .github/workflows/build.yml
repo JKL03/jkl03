@@ -1,10 +1,14 @@
-name: release
+name: build
 on:
-  push:
-    branches: [ master ]
+  pull_request:
+    types: [opened, reopened]
+    paths-ignore:
+      - '**.md'
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -12,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 12.x
 
       - name: Install
         run: npm ci
@@ -28,7 +32,9 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Release
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
+          GITHUB_TOKEN: ${{ github.token }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
